@@ -1,0 +1,166 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.header {
+    align-items: center;
+    min-height: 30px;
+    display: flex;
+    background-color: rgb(8, 8, 8);
+    box-shadow: inset 0 0 5px #6d6d6d;
+    border-radius: 5px ;
+    padding: 8px;
+    padding-left: 40px;
+}
+.header__logo-image {
+  position: relative;
+  z-index: 2;
+  width: 50px; /* Set the width of your image logo */
+  height:50px; /* Make sure it matches the header height */
+  margin-left: 20px;
+   /* Adjust the margin to separate the logos */
+}
+
+.headerLeft{
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+.headerRight{
+  display: flex;
+  position: absolute;
+  right: 20px;
+  align-items:center;
+  
+}
+.material-icons{
+  align-items: center;
+  font-size: 30px;
+}
+span{
+  margin: 0 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+}
+span:hover {
+  color: rgb(119, 0, 255);
+}
+
+.header__icon {
+    width: 70px;
+    cursor: pointer;
+    height: 40px;
+}
+  .movie-container {
+    color: aliceblue;
+    position: relative;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    z-index: 1; /* Ensure the container is above other elements */
+  }
+ 
+  .genre-list {
+    position: absolute;
+    top: 100%;
+    border-radius: 10px;
+    width: 400px;
+    background-color:black;
+    opacity: 0.7;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 4px rgba(252, 250, 250, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2; /* Place the genre list above other elements */
+  }
+  .flex-container {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+  }
+  
+  .flex-item {
+    text-decoration: none;
+    width: calc(33.33% - 5px);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: rgb(237, 250, 250);
+    border: 2px solid white;
+    border-radius:20px;
+  }
+  .headerLeft-mobile{
+    display: none;
+  }
+  .flex-item:hover{
+    background-color: #525151;
+  }
+  @media (max-width:800px) {
+    .header{
+      padding-left: 20px;
+    }
+    .headerLeft{
+      display:none;
+    }
+    .headerLeft-mobile{
+      display:flex;
+      align-items:center;
+      margin-left: 0%;
+    }
+    .bm-burger-button{
+      position:relative;
+      background-color: aliceblue;
+      border-radius: 50px;
+      height:40px;
+      width:40px;
+      margin-right: 10px;
+    }
+    #react-burger-menu-btn{
+      position: absolute !important;
+      border-radius: 50px !important;
+      height:40px !important;
+      width:40px !important;
+    }
+    .bm-menu-wrap{
+      width: 100% !important;
+    }
+    .genre-list {
+      position: absolute;
+      top: 100%;
+      border-radius: 10px;
+      width: 300px;
+      background-color:black;
+      opacity: 0.7;
+      border: 1px solid #ccc;
+      box-shadow: 5px 5px 4px rgba(252, 250, 250, 0.1);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      z-index: 2; /* Place the genre list above other elements */
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
+      padding: 0;
+      margin: 20px;
+    }
+    
+    .flex-item {
+      text-decoration: none;
+      font-size: 10px;
+      width: calc(33.33% - 5px);
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      color: rgb(237, 250, 250);
+      border: 2px solid white;
+      border-radius:20px;
+    }
+    
+  }

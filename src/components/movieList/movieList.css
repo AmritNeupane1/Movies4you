@@ -1,0 +1,50 @@
+.movie__list {
+  padding: 2rem 2rem 3rem 2rem;
+  background-color:#333b44 ;
+}
+
+.list__title {
+  font-size: 1.75rem;
+  margin: 2.5rem;
+  color: whitesmoke;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrows {
+  width: 20px;
+  height:auto;
+  border-color: #080808;
+  /* top: 50%; */
+  margin-top: -20px; /* Adjust as needed */
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+.prev {
+  left: 0;
+
+}
+
+.next {
+  padding: 2px;
+  right: 0;
+}
+
+.list__cards-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.list__cards {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.3s ease-in-out;
+}
